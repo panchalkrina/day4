@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9</title>
+</head>
+<style type="text/css">
+    .container-imga{
+        position:relative;
+        width: 300px;
+    }
+    .image{
+        display:block;
+        width: 300px;
+        height: 400px;
+        transition: 1s;
+    }
+    .overlay{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        opacity: 0;
+        transition: 1S;
+        background-color: rgb(33, 30, 30);
+    }
+    .container-img:hover  .overlay{
+        opacity: 1;
+    }
+    .container-img:hover .image{
+        transform: translate(400PX,300PX);
+    }
+    .TEXT{
+        color: azure;
+        font-size: 20PX;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%)
+        -o-transform:translate(-50%,-50%);
+        -moz-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
+    }
+</style>
+<body>
+    <h2>Image overlay effect</h2>
+    <div class="container-img">
+    <img src="/krina 222.jpg" alt="Demo Image" class="Image">
+    <div class="overlay">
+        <div class="text">Image overlay effect</div>
+    </div>
+    </div>
+    
+</body>
+</html>
